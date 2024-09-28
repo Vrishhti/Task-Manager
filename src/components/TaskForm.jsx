@@ -118,6 +118,7 @@ console.log(taskData.tags)
            className='task_input'
            placeholder='Enter your task'
            onChange={handleChange}
+           value={taskData.task}
         />
            <div className='task_form_bottom_line'>
             {/* whatever val u pass in setTask fn it will val of task state */}
@@ -139,7 +140,8 @@ console.log(taskData.tags)
 
             name='status'
             className='task_status'
-            onChange={handleChange}>
+            onChange={handleChange}
+            value={taskData.status}>
                 <option value='To Do'>To Do</option>
                 <option value='In Progress'>In Progress</option>
                 <option value='Completed'>Completed</option>

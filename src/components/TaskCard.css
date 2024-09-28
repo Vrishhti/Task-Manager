@@ -47,3 +47,23 @@
 .task_delete:hover .delete_icon {
     opacity: 80%;
 }
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .task_card {
+        padding: 10px;
+        margin: 10px 0;
+    }
+    
+    .task_text {
+        font-size: 16px;
+    }
+
+    .task_delete {
+        width: 30px;
+        height: 30px;
+    }
+
+    .delete_icon {
+        width: 16px;
+    }
+}

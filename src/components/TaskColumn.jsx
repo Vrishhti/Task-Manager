@@ -3,7 +3,8 @@ import Todo from "../assets/direct-hit.png"
 import "./TaskColumn.css"
 import TaskCard from './TaskCard'
 
-const TaskColumn = ({name,icon, tasks=[], status}) => {
+const TaskColumn = ({name,icon, tasks=[], status, handleDelete}) => {
+  
     //destructuring props object to make the code cleaner and easier to read
   return (
     //using object destructring so that you dont have to write props.name props.title again and again
@@ -22,6 +23,8 @@ const TaskColumn = ({name,icon, tasks=[], status}) => {
                           key={index}
                           name={task.task}
                           tags={task.tags}
+                          handleDelete={handleDelete}
+                          index={index} 
                           
                       />
                   )
